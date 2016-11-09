@@ -7,9 +7,6 @@ package URI::ldap;
 use strict;
 use warnings;
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 use parent qw(URI::_ldap URI::_server);
 
 sub default_port { 389 }
@@ -23,9 +20,9 @@ sub _nonldap_canonical {
 
 __END__
 
-=head1 NAME
+# ABSTRACT: LDAP Uniform Resource Locators
 
-URI::ldap - LDAP Uniform Resource Locators
+=pod
 
 =head1 SYNOPSIS
 
@@ -111,11 +108,5 @@ L<http://tools.ietf.org/html/rfc2255>
 Graham Barr E<lt>F<gbarr@pobox.com>E<gt>
 
 Slightly modified by Gisle Aas to fit into the URI distribution.
-
-=head1 COPYRIGHT
-
-Copyright (c) 1998 Graham Barr. All rights reserved. This program is
-free software; you can redistribute it and/or modify it under the same
-terms as Perl itself.
 
 =cut

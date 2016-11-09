@@ -5,8 +5,6 @@ use warnings;
 
 use parent 'URI::WithBase';
 
-our $VERSION = "5.04";
-
 # Provide as much as possible of the old URI::URL interface for backwards
 # compatibility...
 
@@ -185,9 +183,9 @@ sub article  { shift->message(@_); }
 
 __END__
 
-=head1 NAME
+# ABSTRACT: Uniform Resource Locators
 
-URI::URL - Uniform Resource Locators
+=pod
 
 =head1 SYNOPSIS
 
@@ -295,9 +293,5 @@ $url->article: same as $uri->message
 =head1 SEE ALSO
 
 L<URI>, L<URI::WithBase>
-
-=head1 COPYRIGHT
-
-Copyright 1998-2000 Gisle Aas.
 
 =cut

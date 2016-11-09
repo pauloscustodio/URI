@@ -1,14 +1,7 @@
-# Copyright (c) 1998 Graham Barr <gbarr@pobox.com>. All rights reserved.
-# This program is free software; you can redistribute it and/or
-# modify it under the same terms as Perl itself.
-
 package URI::_ldap;
 
 use strict;
 use warnings;
-
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
 
 use URI::Escape qw(uri_unescape);
 

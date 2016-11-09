@@ -3,9 +3,7 @@ package URI::Escape;
 use strict;
 use warnings;
 
-=head1 NAME
-
-URI::Escape - Percent-encode and percent-decode unsafe characters
+# ABSTRACT: Percent-encode and percent-decode unsafe characters
 
 =head1 SYNOPSIS
 
@@ -127,21 +125,12 @@ each time.
 
 L<URI>
 
-
-=head1 COPYRIGHT
-
-Copyright 1995-2004 Gisle Aas.
-
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
 =cut
 
 use Exporter 5.57 'import';
 our %escapes;
 our @EXPORT = qw(uri_escape uri_unescape uri_escape_utf8);
 our @EXPORT_OK = qw(%escapes);
-our $VERSION = "3.31";
 
 use Carp ();
 

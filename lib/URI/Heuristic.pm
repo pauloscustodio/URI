@@ -1,8 +1,6 @@
 package URI::Heuristic;
 
-=head1 NAME
-
-URI::Heuristic - Expand URI using heuristics
+# ABSTRACT: Expand URI using heuristics
 
 =head1 SYNOPSIS
 
@@ -77,13 +75,6 @@ involves host name lookups.
 
 =back
 
-=head1 COPYRIGHT
-
-Copyright 1997-1998, Gisle Aas
-
-This library is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself.
-
 =cut
 
 use strict;
@@ -91,7 +82,6 @@ use warnings;
 
 use Exporter 5.57 'import';
 our @EXPORT_OK = qw(uf_uri uf_uristr uf_url uf_urlstr);
-our $VERSION = "4.20";
 
 our ($MY_COUNTRY, $DEBUG);
 

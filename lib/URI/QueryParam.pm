@@ -3,9 +3,6 @@ package URI::QueryParam;
 use strict;
 use warnings;
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 sub URI::_query::query_param {
     my $self = shift;
     my @old = $self->query_form;
@@ -90,10 +87,6 @@ sub URI::_query::query_form_hash {
 1;
 
 __END__
-
-=head1 NAME
-
-URI::QueryParam - Additional query methods for URIs
 
 =head1 SYNOPSIS
 
@@ -201,8 +194,7 @@ though.
 
 L<URI>, L<CGI>
 
-=head1 COPYRIGHT
-
-Copyright 2002 Gisle Aas.
-
 =cut
+
+#ABSTRACT: Additional query methods for URIs
+

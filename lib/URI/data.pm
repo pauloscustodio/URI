@@ -5,9 +5,6 @@ use warnings;
 
 use parent 'URI';
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 use MIME::Base64 qw(encode_base64 decode_base64);
 use URI::Escape  qw(uri_unescape);
 
@@ -78,9 +75,9 @@ EOT
 
 __END__
 
-=head1 NAME
+# ABSTRACT: URI that contains immediate data
 
-URI::data - URI that contains immediate data
+=pod
 
 =head1 SYNOPSIS
 
@@ -132,12 +129,5 @@ based on the encoding that produces the shorter URI string.
 =head1 SEE ALSO
 
 L<URI>
-
-=head1 COPYRIGHT
-
-Copyright 1995-1998 Gisle Aas.
-
-This library is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself.
 
 =cut

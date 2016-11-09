@@ -3,9 +3,6 @@ package URI::_punycode;
 use strict;
 use warnings;
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 use Exporter 'import';
 our @EXPORT = qw(encode_punycode decode_punycode);
 
@@ -147,9 +144,9 @@ sub min {
 1;
 __END__
 
-=head1 NAME
+# ABSTRACT: encodes Unicode string in Punycode
 
-URI::_punycode - encodes Unicode string in Punycode
+=pod
 
 =head1 SYNOPSIS
 

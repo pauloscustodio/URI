@@ -4,7 +4,6 @@ use strict;
 use warnings;
 
 use parent 'URI::_generic';
-our $VERSION = "4.21";
 
 use URI::Escape qw(uri_unescape);
 
@@ -106,9 +105,9 @@ sub dir
 
 __END__
 
-=head1 NAME
+# ABSTRACT: URI that maps to local file names
 
-URI::file - URI that maps to local file names
+=pod
 
 =head1 SYNOPSIS
 
@@ -316,12 +315,5 @@ authority-less URIs on Unix.
 =head1 SEE ALSO
 
 L<URI>, L<File::Spec>, L<perlport>
-
-=head1 COPYRIGHT
-
-Copyright 1995-1998,2004 Gisle Aas.
-
-This library is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself.
 
 =cut

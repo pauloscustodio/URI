@@ -7,9 +7,6 @@ use parent 'URI::file::Base';
 
 use URI::Escape qw(uri_unescape);
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 sub _file_extract_path
 {
     my $class = shift;

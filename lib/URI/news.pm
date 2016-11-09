@@ -3,9 +3,6 @@ package URI::news;  # draft-gilman-news-url-01
 use strict;
 use warnings;
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 use parent 'URI::_server';
 
 use URI::Escape qw(uri_unescape);

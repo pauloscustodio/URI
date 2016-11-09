@@ -3,9 +3,6 @@ package URI;
 use strict;
 use warnings;
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 our ($ABS_REMOTE_LEADING_DOTS, $ABS_ALLOW_RELATIVE_SCHEME, $DEFAULT_QUERY_FORM_DELIMITER);
 
 my %implements;  # mapping from scheme to implementor class
@@ -351,10 +348,6 @@ sub STORABLE_thaw {
 1;
 
 __END__
-
-=head1 NAME
-
-URI - Uniform Resource Identifiers (absolute and relative)
 
 =head1 SYNOPSIS
 
@@ -1135,15 +1128,6 @@ L<http://www.iana.org/assignments/urn-namespaces>
 
 L<http://www.w3.org/Addressing/>
 
-=head1 COPYRIGHT
-
-Copyright 1995-2009 Gisle Aas.
-
-Copyright 1995 Martijn Koster.
-
-This program is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
 =head1 AUTHORS / ACKNOWLEDGMENTS
 
 This module is based on the C<URI::URL> module, which in turn was
@@ -1159,3 +1143,6 @@ list.
 C<URI> and related subclasses was developed by Gisle Aas.
 
 =cut
+
+# ABSTRACT: Uniform Resource Identifiers (absolute and relative)
+

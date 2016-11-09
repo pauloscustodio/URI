@@ -5,9 +5,6 @@ use warnings;
 
 use URI::Escape qw();
 
-our $VERSION = '1.71';
-$VERSION = eval $VERSION;
-
 sub new
 {
     my $class = shift;

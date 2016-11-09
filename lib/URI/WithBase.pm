@@ -6,8 +6,6 @@ use warnings;
 use URI;
 use Scalar::Util 'blessed';
 
-our $VERSION = "2.20";
-
 use overload '""' => "as_string", fallback => 1;
 
 sub as_string;  # help overload find it
@@ -114,9 +112,9 @@ sub rel
 
 __END__
 
-=head1 NAME
+# ABSTRACT: URIs which remember their base
 
-URI::WithBase - URIs which remember their base
+=pod
 
 =head1 SYNOPSIS
 
@@ -166,9 +164,5 @@ base with it.  A new object is always returned.
 =head1 SEE ALSO
 
 L<URI>
-
-=head1 COPYRIGHT
-
-Copyright 1998-2002 Gisle Aas.
 
 =cut
